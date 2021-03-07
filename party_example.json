@@ -1,0 +1,46 @@
+{
+	"name": "Test Party",
+	"maxSize": 4,
+	"characters": {
+		"Character1": {
+			"name" : "Arthur",
+			"hp" : 4,
+			"id" : 1,
+			"strength" : 15,
+			"agility" : 15,
+			"magic" : 15,
+			"luck" : 15,
+			"fatigue" : 0
+		},
+		"Character2": {
+			"name" : "Billy",
+			"hp" : 2,
+			"id" : 2,
+			"strength" : 14,
+			"agility" : 14,
+			"magic" : 14,
+			"luck" : 14,
+			"fatigue" : 0
+		},
+		"Character3": {
+			"name" : "Carl",
+			"hp" : 2,
+			"id" : 3,
+			"strength" : 12,
+			"agility" : 12,
+			"magic" : 12,
+			"luck" : 12,
+			"fatigue" : 0
+		},
+		"Character4": {
+			"name" : "Dorothy",
+			"hp" : 4,
+			"id" : 4,
+			"strength" : 17,
+			"agility" : 17,
+			"magic" : 17,
+			"luck" : 17,
+			"fatigue" : 0
+		}
+	}
+}
