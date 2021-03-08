@@ -126,7 +126,7 @@ def newChallenge(challengeProfile,party,partyCharacter):
     challengeRoll = rollD20()
     challengeTotal = challengeRoll + challengeProfile[0]
 
-    print("\nThe chalenge score is ", challengeTotal)
+    print("\nThe challenge score is ", challengeTotal)
     
     #the character
     characterAttributeScore = 0
@@ -180,7 +180,6 @@ def new_party(party_size):
         while a <= 4:
             print("\n Rolling for attribute ", a, "...")
             attributeScore = roll_for_Attributes(char)
-            #function the following, so you can loop back if input error
             char = assignAttribute(a,char,attributeScore,attributes)
             a += 1
         newParty.addCharacter(char)
@@ -227,7 +226,7 @@ def import_party(party_size):
         while a <= rem:
             char_name = input('Provide name of Replacement Character {0}: '.format(a))
             char = character.Character(char_name, 2, 3, 3, 3, 3, 0)
-            print(i, char.displayCharacter())
+            print(a, char.displayCharacter())
             #generate 4 attributes
             b = 1
             attributes = ["strength", "agility", "magic", "luck"]
@@ -235,7 +234,7 @@ def import_party(party_size):
                 print("\n Rolling for attribute ", a, "...")
                 attributeScore = roll_for_Attributes(char)
                 #function the following, so you can loop back if input error
-                char = assignAttribute(a,char,attributeScore,attributes)
+                char = assignAttribute(b,char,attributeScore,attributes)
                 b += 1
             importedParty.addCharacter(char)
             a += 1

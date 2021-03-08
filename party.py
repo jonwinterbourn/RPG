@@ -39,7 +39,9 @@ class Party():
         #return "character added with key ", key
 
     def killCharacter(self,character):
-        self.characters.pop(character)
+        #find index of character
+        i = self.characters.index(character)
+        self.characters.pop(i)
         
 def convertIndextoCount(i):
     return i + 1
